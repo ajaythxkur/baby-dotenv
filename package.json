@@ -1,0 +1,33 @@
+{
+  "name": "baby-dotenv",
+  "version": "0.0.1",
+  "description": "Baby version of dotenv",
+  "main": "index.js",
+  "scripts": {
+    "dev":"vitest",
+    "test":"vitest run",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "ci":"pnpm run lint && pnpm run test && pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaythxkur/baby-dotenv.git"
+  },
+  "keywords": [
+    "dotenv",
+    "babydotenv"
+  ],
+  "author": "ajaythxkur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajaythxkur/baby-dotenv/issues"
+  },
+  "homepage": "https://github.com/ajaythxkur/baby-dotenv#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  }
+}
